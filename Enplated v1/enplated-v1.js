@@ -40,6 +40,5 @@ function developerVersion() {
     } catch(err) {
         var text = "CHYBA: Vávojářská verze nemohla být z neznámého důvodu aktivována";
     }
-
     return text;
 }
