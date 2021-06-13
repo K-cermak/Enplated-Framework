@@ -1,3 +1,10 @@
+/*
+ENPLATED v2.0 by Karel Cermak (info@k-cermak.com)
+WEBSITE: https://enplated.k-cermak.com/
+DOCUMENTATION: https://enplated.k-cermak.com/en/documentation
+LICENSE: https://enplated.k-cermak.com/en/license
+*/
+
 document.querySelector("head").innerHTML += "<link rel='stylesheet' type='text/css' media='screen' href='https://mirror.k-cermak.com/data/enplated/enplated-v2.css'>";
 
 window.addEventListener('load', function () {
@@ -85,7 +92,7 @@ function loadFonts() {
     ((fonts.h3 != "default") ? setRootElement("--h3Font", fonts.h3) : setRootElement("--h3Font", "Arial"));
     ((fonts.h4 != "default") ? setRootElement("--h4Font", fonts.h4) : setRootElement("--h4Font", "Arial"));
     ((fonts.h5 != "default") ? setRootElement("--h5Font", fonts.h5) : setRootElement("--h5Font", "Arial"));
-    ((fonts.h6 != "default") ? setRootElement("--h6Font", fonts.h6) : setRootElement("--h6Font", "pink"));
+    ((fonts.h6 != "default") ? setRootElement("--h6Font", fonts.h6) : setRootElement("--h6Font", "Arial"));
     ((fonts.p != "default") ? setRootElement("--pFont", fonts.p) : setRootElement("--pFont", "Arial"));
     ((fonts.headerName != "default") ? setRootElement("--headerNameFont", fonts.headerName) : setRootElement("--headerNameFont", "Arial"));
     ((fonts.headerMenu != "default") ? setRootElement("--headerMenuFont", fonts.headerMenu) : setRootElement("--headerMenuFont", "Arial"));

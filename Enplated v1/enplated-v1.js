@@ -1,3 +1,10 @@
+/*
+ENPLATED v1.0 by Karel Cermak (info@k-cermak.com)
+WEBSITE: https://enplated.k-cermak.com/
+DOCUMENTATION: https://enplated.k-cermak.com/en/documentation
+LICENSE: https://enplated.k-cermak.com/en/license
+*/
+
 document.getElementsByTagName("head")[0].innerHTML += "<link id='enplatedStyles' rel='stylesheet' type='text/css' media='screen' href='https://mirror.k-cermak.com/data/enplated/enplated-v1.css'>";
 
 window.onload = function startVerify() {
