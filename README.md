@@ -1,5 +1,5 @@
 # Enplated
-## Simplify web development and its boring basics with Enplated framework
+## Simplify web development and its boring basics with Enplated framework.
 
 ### Why to use Enplated?
 - HTML variables
@@ -22,9 +22,11 @@ https://enplated.k-cermak.com/en/documentation
 Enplated is available under MIT license. More here: https://enplated.k-cermak.com/en/license
 
 ### Older versions of Enplated:
-For using older versions of Enplated (non recommended) go to branches
+For using older versions of Enplated (non recommended) go to branches.
 
-
+<br/>
+<br/>
+<br/>
 
 ### Sources used:
 SpinKit by tobiasahlin: https://github.com/tobiasahlin/SpinKit
