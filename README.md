@@ -9,6 +9,9 @@
 - No server side integration
 - Completely free
 
+<br/>
+<br/>
+
 ### Enplated website:
 https://enplated.k-cermak.com
 
@@ -20,6 +23,9 @@ https://enplated.k-cermak.com/en/documentation
 
 ### License
 Enplated is available under MIT license. More here: https://enplated.k-cermak.com/en/license
+
+<br/>
+<br/>
 
 ### Older versions of Enplated:
 For using older versions of Enplated (non recommended) go to branches.
