@@ -26,7 +26,6 @@ For using older versions of Enplated (non recommended) go to branches.
 
 <br/>
 <br/>
-<br/>
 
 ### Sources used:
 SpinKit by tobiasahlin: https://github.com/tobiasahlin/SpinKit
