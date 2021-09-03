@@ -1,10 +1,10 @@
-//THIS IS CONFIG FILE OF ENPLATED SITE
+//THIS IS CONFIG FILE OF ENPLATED FRAMEWORK SITE
 //YOU SHOULDN'T DO ANY CHANGES IN THIS FILE ON LIVE PAGE
 
 //DECLARE YOUR PAGE VARIABLES
 var pageVariables = {
     pageName : 'My Page',
-    pageDesc : 'My Amazing Page created with Enplated'
+    pageDesc : 'My Amazing Page created with Enplated Framework'
 }
 
 //DECLARE YOUR ELEMENTS COLORS. USE default FOR DEFAULT COLORS

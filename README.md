@@ -1,7 +1,7 @@
-# Enplated
-## Simplify web development and its boring basics with Enplated framework.
+# Enplated Framework
+## Simplify web development and its boring basics with Enplated Framework.
 
-### Why to use Enplated?
+### Why to use Enplated Framework?
 - HTML variables
 - Simple font and color settings
 - Integrated element blocks
@@ -12,23 +12,30 @@
 <br/>
 <br/>
 
-### Enplated website:
-https://enplated.k-cermak.com
+### Enplated Framework website:
+https://enplated-framework.k-cermak.com
 
 ### How to implement Enplated?
-https://enplated.k-cermak.com/en/implementation
+https://enplated-framework.k-cermak.com/en/implementation
 
 ### Where can I read documentation?
-https://enplated.k-cermak.com/en/documentation
+https://enplated-framework.k-cermak.com/en/documentation
 
 ### License
-Enplated is available under MIT license. More here: https://enplated.k-cermak.com/en/license
+Enplated Framework is available under MIT license. More here: https://enplated-framework.k-cermak.com/en/license
 
 <br/>
 <br/>
 
-### Older versions of Enplated:
-For using older versions of Enplated (non recommended) go to branches.
+### Older versions of Enplate Frameworkd:
+For using older versions of Enplated Framework (non recommended) go to branches.
+
+<br/>
+<br/>
+
+### Enplated Framework is part of Enplated project:
+https://enplated.k-cermak.com
+
 
 <br/>
 <br/>

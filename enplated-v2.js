@@ -1,14 +1,14 @@
 /*
-ENPLATED v2.0 by Karel Cermak (info@k-cermak.com)
-WEBSITE: https://enplated.k-cermak.com/
-DOCUMENTATION: https://enplated.k-cermak.com/en/documentation
-LICENSE: https://enplated.k-cermak.com/en/license
+ENPLATED FRAMEWORK v2.0 by Karel Cermak (info@k-cermak.com)
+WEBSITE: https://enplated-framework.k-cermak.com/
+DOCUMENTATION: https://enplated-framework.k-cermak.com/en/documentation
+LICENSE: https://enplated-framework.k-cermak.com/en/license
 */
 
 document.querySelector("head").innerHTML += "<link rel='stylesheet' type='text/css' media='screen' href='https://mirror.k-cermak.com/data/enplated/enplated-v2.css'>";
 
 window.addEventListener('load', function () {
-    printMessage("load","Page loaded, starting with Enplated JS");
+    printMessage("load","Page loaded, starting with Enplated Framework JS");
     loadCopyright();
     loadVariables();
     loadColors();
@@ -16,35 +16,35 @@ window.addEventListener('load', function () {
     loadListeners();
     loadRedirect();
     loadCounters();
-    printMessage("check","Enplated JS setup finished");
+    printMessage("check","Enplated Framework JS setup finished");
 });
 
 
 function loadVariables() {
-    printMessage("load","Loading Enplated variables");
+    printMessage("load","Loading Enplated Framework variables");
     for (let i = 0; i < Object.values(pageVariables).length; i++) {
         let varName = Object.getOwnPropertyNames(pageVariables)[i];
         for (let j = 0; j < document.querySelectorAll("span."+varName).length; j++) {
             document.querySelectorAll("span."+varName)[j].innerHTML = Object.values(pageVariables)[i];
         }
     }
-    printMessage("check","Enplated variables loaded");
+    printMessage("check","Enplated Framework variables loaded");
 }
 
 function loadCopyright() {
     if (developerVersion == true) {
         try {
-            document.querySelector("#"+copyrightInfoId).innerHTML += "Created with <a href='https://enplated.k-cermak.com' target='_blank'>Enplated v2.0</a> (privacy policy <a href='https://gdpr.k-cermak.com' target='_blank'>here</a>). May use <a href='https://policies.google.com/privacy?hl=en-US' target='_blank'>Google Services</a>. ";
+            document.querySelector("#"+copyrightInfoId).innerHTML += "Created with <a href='https://enplated-framework.k-cermak.com' target='_blank'>Enplated Framework v2.0</a> (privacy policy <a href='https://gdpr.k-cermak.com' target='_blank'>here</a>). May use <a href='https://policies.google.com/privacy?hl=en-US' target='_blank'>Google Services</a>. ";
         } catch (err) {}
 
         document.querySelector("main").innerHTML = "<p style='color:red'>Developer mode activated</p>" + document.querySelector("main").innerHTML;
         printMessage("check","Developer version enabled")
     } else {
         try {
-            document.querySelector("#"+copyrightInfoId).innerHTML += "Created with <a href='https://enplated.k-cermak.com' target='_blank'>Enplated v2.0</a> (privacy policy <a href='https://gdpr.k-cermak.com' target='_blank'>here</a>). May use <a href='https://policies.google.com/privacy?hl=en-US' target='_blank'>Google Services</a>. ";
+            document.querySelector("#"+copyrightInfoId).innerHTML += "Created with <a href='https://enplated-framework.k-cermak.com' target='_blank'>Enplated Framework v2.0</a> (privacy policy <a href='https://gdpr.k-cermak.com' target='_blank'>here</a>). May use <a href='https://policies.google.com/privacy?hl=en-US' target='_blank'>Google Services</a>. ";
         } catch (err) {
-            document.querySelector("main").innerHTML = "<h1 style='color:red'>Enplated copyright doesn't exist (read browser console)</h1>" + document.querySelector("main").innerHTML;
-            printMessage("error","Enplated core cannot find copyright bar", true)
+            document.querySelector("main").innerHTML = "<h1 style='color:red'>Enplated Framework copyright doesn't exist (read browser console)</h1>" + document.querySelector("main").innerHTML;
+            printMessage("error","Enplated Framework core cannot find copyright bar", true)
             printMessage("warn","SOLUTION: Go to config.js and correctly fill copyrightInfoId variabl", true)
             printMessage("warn","ALTERNATIVE: Go to config.js and change variable developerVersion to true (only for testing)", true)
         }
@@ -52,7 +52,7 @@ function loadCopyright() {
 }
 
 function loadColors() {
-    printMessage("load","Loading Enplated colors");
+    printMessage("load","Loading Enplated Framework colors");
     ((pageColors.mainBackgroud != "default") ? setRootElement("--mainBackgroudColor", pageColors.mainBackgroud) : setRootElement("--mainBackgroudColor", "#222222"));
     ((pageColors.secondBackground != "default") ? setRootElement("--secondBackgroundColor", pageColors.secondBackground) : setRootElement("--secondBackgroundColor", "#393e46"));
     ((pageColors.icon != "default") ? setRootElement("--iconColor", pageColors.icon) : setRootElement("--iconColor", "#ffffff"));
@@ -71,7 +71,7 @@ function loadColors() {
     ((pageColors.footerMain != "default") ? setRootElement("--footerMainColor", pageColors.footerMain) : setRootElement("--footerMainColor", "#393e46"));
     ((pageColors.footerSecond != "default") ? setRootElement("--footerSecondColor", pageColors.footerSecond) : setRootElement("--footerSecondColor", "#121212"));
     ((pageColors.h2 != "default") ? setRootElement("--animation-color", pageColors.h2) : setRootElement("--animation-color", "#ffffff"));
-    printMessage("check","Enplated colors loaded");
+    printMessage("check","Enplated Framework colors loaded");
 }
 
 function loadFonts() {
@@ -86,7 +86,7 @@ function loadFonts() {
     }
     printMessage("check","Google fonts finished");
 
-    printMessage("load","Loading Enplated fonts");
+    printMessage("load","Loading Enplated Framework fonts");
     ((fonts.h1 != "default") ? setRootElement("--h1Font", fonts.h1) : setRootElement("--h1Font", "Arial"));
     ((fonts.h2 != "default") ? setRootElement("--h2Font", fonts.h2) : setRootElement("--h2Font", "Arial"));
     ((fonts.h3 != "default") ? setRootElement("--h3Font", fonts.h3) : setRootElement("--h3Font", "Arial"));
@@ -98,7 +98,7 @@ function loadFonts() {
     ((fonts.headerMenu != "default") ? setRootElement("--headerMenuFont", fonts.headerMenu) : setRootElement("--headerMenuFont", "Arial"));
     ((fonts.footerMain != "default") ? setRootElement("--footerMainFont", fonts.footerMain) : setRootElement("--footerMainFont", "Arial"));
     ((fonts.footerSecond != "default") ? setRootElement("--footerSecondFont", fonts.footerSecond) : setRootElement("--footerSecondFont", "Arial"));
-    printMessage("check","Enplated fonts loaded");
+    printMessage("check","Enplated Framework fonts loaded");
 }
 
 function setRootElement(elementName, property) {
