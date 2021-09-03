@@ -1,6 +1,6 @@
 /*
-ENPLATED v1.0 by Karel Cermak (info@k-cermak.com)
-THIS IS OLD VERSION OF ENPLATED AND YOU SHOULD SWITCH: https://github.com/K-cermak/Enplated
+ENPLATED FRAMEWORK v1.0 by Karel Cermak (info@k-cermak.com)
+THIS IS OLD VERSION OF ENPLATED FRAMEWORK AND YOU SHOULD SWITCH: https://github.com/K-cermak/Enplated-Framework
 */
 
 document.getElementsByTagName("head")[0].innerHTML += "<link id='enplatedStyles' rel='stylesheet' type='text/css' media='screen' href='https://mirror.k-cermak.com/data/enplated/enplated-v1.css'>";
