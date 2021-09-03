@@ -27,7 +27,7 @@ Enplated Framework is available under MIT license. More here: https://enplated-f
 <br/>
 <br/>
 
-### Older versions of Enplate Frameworkd:
+### Older versions of Enplated Framework:
 For using older versions of Enplated Framework (non recommended) go to branches.
 
 <br/>
