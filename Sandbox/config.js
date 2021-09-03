@@ -2,8 +2,9 @@
 //DON'T CREATE ANY CHANGES IN THIS FILE ON LIVE PAGE
 
 var pageVariables = {
-    pageName : 'Moje stránka',
-    pageDesc : 'Můj popis'
+    priceFirst: '79 $',
+    priceSecond: '449 $',
+    priceThird: '649 $'
 }
 
 var pageColors = {
@@ -40,7 +41,7 @@ var fonts = {
     footerSecond : 'Alata',
 }
 
-var copyrightInfoId = 'test';
+var copyrightInfoId = 'copyrightInfo';
 var developerVersion = false;
 
 //GOOGLE MATERIAL ICONS IS ALREADY IMPORTED
