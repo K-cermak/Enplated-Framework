@@ -1,5 +1,14 @@
-# Enplated Framework
-## Simplify web development and its boring basics with Enplated Framework.
+<p align="center">
+    <a href="https://enplated-framework.k-cermak.com">
+        <img src="https://mirror.k-cermak.com/data/logo-v3/logo-enplatedframework.svg" width="500" height="100" alt="Enplated Framework logo">
+    </a>
+    <br>
+        <br>
+    <strong> Simplify web development and its boring basics with Enplated Framework.</strong>
+</p>
+
+<br/>
+<br/>
 
 ### Why to use Enplated Framework?
 - HTML variables
