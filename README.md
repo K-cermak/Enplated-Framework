@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://enplated-framework.k-cermak.com">
-        <img src="https://mirror.k-cermak.com/data/logo-v3/logo-enplatedframework-bg.svg" width="500" height="100" alt="Enplated Framework logo">
+        <img src="https://mirror.k-cermak.com/data/logo-v3/logo-enplatedframework-bg.svg" width="700" height="150" alt="Enplated Framework logo">
     </a>
     <br>
         <br>
