@@ -17,4 +17,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS ORIMPLIE
 
 
 Sources used:
+Bootstrap 5.3 by The Bootstrap Authors (https://getbootstrap.com)
+AOS by Michalsnik (https://github.com/michalsnik/aos)
+FlashJS by betaWeb (https://github.com/betaWeb/flashjs) - modified
 SpinKit by tobiasahlin (https://github.com/tobiasahlin/SpinKit)
+CSS Loaders & Spinners by vineethtrv (https://github.com/vineethtrv/css-loader)
