@@ -7,11 +7,6 @@
 - [✅] Add Flash messages functions
 - [✅] Add AOS library
 - [✅] Add Loading animations functions
-- Add GDPR and cookie consent functions
+- [✅] Add GDPR and cookie consent functions
 - [✅] Smart variables
 - Loading screen?
-
-
-
-GDPR
-- vypisovač do stránky

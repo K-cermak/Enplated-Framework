@@ -31,7 +31,7 @@ var enplatedSettingsCustom = {
         },
         reloadAfterComplete : false,
         gdprSetters : {
-            currentVersion : "1",
+            currentVersion : "2",
             mainCookieName : "enpGdpr",
             domain : "procmelaky.cz",
             path : "/",
@@ -76,6 +76,14 @@ var enplatedSettingsCustom = {
                     mainScreen : {
                         info : "This website may use cookies. It may also collect certain personal information. All information can be found on this page <a href='example.com/gdpr' target='_blank'>example.com/gdpr</a>."
                     },
+                    gdprTitles : {
+                        cookieListTitle : "Cookie list",
+                        cookieValue : "Value",
+                        consentVersion : "Consent version",
+                        acceptedOn : "Accepted on",
+                        resetConset : "Reset consent",
+                    },
+
                     cookies : {
                         googleFonts : {
                             name : "Google Fonts",
@@ -110,6 +118,7 @@ var enplatedSettingsCustom = {
                     mainScreen : {
                         info : "Tato stránka může používat cookies. Může také sbírat některé osobní informace. Bližší informace můžete nalézt na <a href='example.com/gdpr' target='_blank'>example.com/gdpr</a>."
                     },
+                    valueTitle : "Hodnota",
                     cookies : {
                         googleFonts : {
                             name : "Google Fonts",
@@ -144,6 +153,7 @@ var enplatedSettingsCustom = {
                     mainScreen : {
                         info : "Esta página puede utilizar cookies. También puede recopilar cierta información personal. Puede encontrar más información en <a href='example.com/gdpr' target='_blank'>example.com/gdpr</a>."
                     },
+                    valueTitle : "Valor",
                     cookies : {
                         googleFonts : {
                             name : "Google Fonts",
@@ -200,6 +210,7 @@ function start() {
         gdprLoad();
     }
     loadGoogleAnalytics();
+    loadCookieList();
 
 }
 
@@ -798,7 +809,6 @@ function loadGoogleAnalytics() {
     //check if allowed and if is enabled
     if (enplatedSettingsCustom.gdprSettings.googleAnalytics.enable == true && getCookieValue(enplatedSettingsCustom.gdprSettings.googleAnalytics.cookieName) == "true") {
         //load google analytics
-        console.log("load");
         let anonymizeIp = enplatedSettingsCustom.gdprSettings.googleAnalytics.anonymizeIp;
         let trackingId = enplatedSettingsCustom.gdprSettings.googleAnalytics.trackingId;
 
@@ -814,6 +824,61 @@ function loadGoogleAnalytics() {
     }
 }
 
+function loadCookieList() {
+    if (document.querySelector("enp-gdpr")) {
+        let cookieList = document.querySelector("enp-gdpr");
+        let lang = cookieList.getAttribute("lang");
+
+        //list all cookies enplatedSettingsCustom.gdprSettings.gdprSetters.individualCookies and add them to the list
+        let data = `<div class="cookieList">`;
+
+        //version of mainCookie
+        data += `<div class="cookieItem">
+            <h4>`+enplatedSettingsCustom.gdprSettings.allowedLang[lang].texts.gdprTitles.cookieListTitle+`:</h4>
+            <p class="mt-1 mb-5"><strong>`+enplatedSettingsCustom.gdprSettings.allowedLang[lang].texts.gdprTitles.consentVersion+`:</strong> `+ getCookieValue(enplatedSettingsCustom.gdprSettings.gdprSetters.mainCookieName).toString() +`</p>
+        </div>`;
+
+
+
+        for (let cookie in enplatedSettingsCustom.gdprSettings.gdprSetters.individualCookies) {
+            data += `<div class="cookieItem">
+                <h4>`+enplatedSettingsCustom.gdprSettings.allowedLang[lang].texts.cookies[cookie].name+` - `+enplatedSettingsCustom.gdprSettings.allowedLang[lang].texts.cookies[cookie].type+`</h4>
+                <p class="m-0">`+enplatedSettingsCustom.gdprSettings.allowedLang[lang].texts.cookies[cookie].description+`</p>
+                <h5 class="mt-1 mb-5">`+enplatedSettingsCustom.gdprSettings.allowedLang[lang].texts.gdprTitles.cookieValue+`: `+ getCookieValue(enplatedSettingsCustom.gdprSettings.gdprSetters.individualCookies[cookie].cookieName).toString() +`</h5>
+            </div>`;
+        }
+        //add reset button
+        data += `<div class="cookieItem">
+            <button class="btn btn-danger" id="enpGdprReset">`+enplatedSettingsCustom.gdprSettings.allowedLang[lang].texts.gdprTitles.resetConset+`</button>
+        </div>`;
+
+        data += `</div>`;
+
+        cookieList.innerHTML = data;
+
+        document.querySelector("#enpGdprReset").addEventListener("click", function() {
+            resetConsent();
+        });
+    }
+}
+
+function resetConsent() {
+    let cookies = document.cookie.split("; ");
+    for (let c = 0; c < cookies.length; c++) {
+        let d = window.location.hostname.split(".");
+        while (d.length > 0) {
+            let cookieBase = encodeURIComponent(cookies[c].split(";")[0].split("=")[0]) + '=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=' + d.join('.') + ' ;path=';
+            let p = location.pathname.split('/');
+            document.cookie = cookieBase + '/';
+            while (p.length > 0) {
+                document.cookie = cookieBase + p.join('/');
+                p.pop();
+            };
+            d.shift();
+        }
+    }
+    document.location.reload(true)
+}
 
 /**********************************/
 /*HELPERS*/
