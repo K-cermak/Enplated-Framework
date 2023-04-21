@@ -9,3 +9,7 @@
 - [✅] Add Loading animations functions
 - [✅] Add GDPR and cookie consent functions
 - [✅] Smart variables
+
+
+### CDN LINKS
+- https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v3/enp-loader.min.js
