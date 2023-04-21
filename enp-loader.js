@@ -18,7 +18,7 @@ var enplatedSettingsCustom = {
             "data-aos-delay" : "300",
         },
     },
-    gdprAllowed : true,
+    gdprAllowed : false,
     gdprSettings : {
         disableOnDomains : ["localhost", ""],
         disableOnPath : ["gdpr.html"],
@@ -272,6 +272,7 @@ function aosLoad() {
     };
 }
 
+/*GDPR AND COOKIE LOADERS*/
 function loaderLoad() {
     for (let i = 0; i < enplatedSettingsImport.allowedLoaders.length; i++) {
         let loader = enplatedSettingsImport.allowedLoaders[i];
@@ -983,6 +984,169 @@ function startAnimRender() {
 
             loaderElement.innerHTML = loaderHtml;
             loaderElement.insertAdjacentHTML("beforeend", "<style>" + loaderCss + "</style>");
+        }
+    }
+}
+
+var bootstrapTestModal = {
+    global : {
+        closable : true, //true | false
+        size : "md", //sm | md | lg | xl
+        scrollable : true, //true | false
+        position : "center", //center | top
+    },
+    header : {
+        title : "Modal title",
+        closeButton : true, //true | false
+    },
+    main : {
+        content : "Modal content <form action='index.html' method='GET'><input type='text' id='test' name='test' value='test' /></form>",
+    },
+    footer : {
+        buttons : {
+            close : {
+                text : "Close",
+                type : "secondary", //primary | secondary | success | danger | warning | info | light | dark
+                function : "close", //close | reload | submit | redirect | function
+            },
+            reload : {
+                text : "Reload",
+                type : "warning", //primary | secondary | success | danger | warning | info | light | dark
+                function : "reload", //close | reload | submit | redirect | function
+            },
+            form : {
+                text : "Submit",
+                type : "danger", //primary | secondary | success | danger | warning | info | light | dark
+                function : "submit", //close | reload | submit | redirect | function
+                dataset : function() {	
+                    if (document.querySelector("#selector #test").value != "test") {
+                        alert("error");
+                        return false;
+                    }
+                }
+            },
+            redirect : {
+                text : "Redirect",
+                type : "info", //primary | secondary | success | danger | warning | info | light | dark
+                function : "redirect", //close | reload | submit | redirect | function
+                dataset : "https://google.com",
+            },
+            function : {
+                text : "Function",
+                type : "primary", //primary | secondary | success | danger | warning | info | light | dark
+                function : "function", //close | reload | submit | redirect | function
+                dataset : function() {	
+                    alert("save");
+                    closeModal("selector");
+                },
+            },
+        },
+    },
+}
+
+function genModal(object) {
+    let modalId = genRandomId();
+    let modalHtml = `<div class="modal fade" id="`+modalId+`" tabindex="-1" role="dialog" aria-labelledby="`+modalId+`Label" aria-hidden="true"`;
+
+    if (!object.global.closable) {
+        modalHtml += `data-bs-backdrop="static" data-bs-keyboard="false"`
+    }
+    
+    modalHtml += `><div class="modal-dialog modal-`+object.global.size;
+
+    if (object.global.scrollable) {
+        modalHtml += ` modal-dialog-scrollable`;
+    }
+    if (object.global.position == "center") {
+        modalHtml += ` modal-dialog-centered`;
+    }
+        
+    modalHtml += `" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">`+object.header.title+`</h5>`
+    
+    if (object.header.closeButton) {
+        modalHtml += `<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>`;
+    }
+
+    modalHtml += `</div><div class="modal-body">` + object.main.content + `</div><div class="modal-footer">`;
+                    
+
+    for (let i = 0; i < Object.keys(object.footer.buttons).length; i++) {
+        let button = object.footer.buttons[Object.keys(object.footer.buttons)[i]];
+        modalHtml += `<button type="button" class="btn btn-`+button.type+`">`+button.text+`</button>`;
+    }
+
+    modalHtml += `</div></div></div></div>`;
+
+    document.querySelector("body").insertAdjacentHTML("beforeend", modalHtml);
+
+    for (let i = 0; i < Object.keys(object.footer.buttons).length; i++) {
+        let button = object.footer.buttons[Object.keys(object.footer.buttons)[i]];
+        document.querySelectorAll("#"+modalId+" .modal-footer button")[i].addEventListener("click", function() {
+            if (button.function == "close") {
+                closeModal(modalId);
+            } else if (button.function == "reload") {
+                location.reload();
+            } else if (button.function == "submit") {
+
+                //if function exists, execute it, if not, submit form
+                if (button.dataset) {
+                    //replace word "selector" with modalId
+                    let func = button.dataset.toString().replaceAll("selector", modalId);
+
+                    //convert string to function
+                    func = new Function("return " + func)();
+
+                    //if function returns false, stop submit
+                    let returnData = func();
+                    if (returnData == false) {
+                        return;
+                    }
+                }
+                document.querySelector("#"+modalId+" form").submit();
+
+            } else if (button.function == "redirect") {
+                window.location.href = button.dataset;
+            } else if (button.function == "function") {
+
+                //replace word "selector" with modalId
+                let func = button.dataset.toString().replaceAll("selector", modalId);
+
+                //convert string to function
+                func = new Function("return " + func)();
+                
+                //execute function
+                func();
+            }
+        });
+    }
+
+    showModal(modalId);
+    return modalId;
+}
+
+var modalLinks = [];
+
+function showModal(modalId) {
+    let modal = new bootstrap.Modal(document.querySelector("#"+modalId), {
+        keyboard: false
+    });
+    modal.show();
+
+    let object = {
+        id : modalId,
+        modal : modal,
+    }
+
+    modalLinks.push(object);
+}
+
+function closeModal(modalId) {
+    for (let i = 0; i < modalLinks.length; i++) {
+        if (modalLinks[i].id == modalId) {
+            modalLinks[i].modal.hide();
         }
     }
 }
