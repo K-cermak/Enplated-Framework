@@ -5,7 +5,7 @@ DOCUMENTATION: https://enplated-framework.k-cermak.com/en/documentation
 LICENSE: https://enplated-framework.k-cermak.com/en/license
 */
 
-document.querySelector("head").innerHTML += "<link rel='stylesheet' type='text/css' media='screen' href='https://mirror.k-cermak.com/data/enplated/enplated-v2.css'>";
+document.querySelector("head").innerHTML += "<link rel='stylesheet' type='text/css' media='screen' href='https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v2/enplated-v2.min.css'>";
 
 window.addEventListener('load', function () {
     printMessage("load","Page loaded, starting with Enplated Framework JS");
