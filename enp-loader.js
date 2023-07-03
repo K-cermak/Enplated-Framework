@@ -734,13 +734,13 @@ function genFlashMessage(msg, type, time) {
     };
 
     if (type == 'success')
-        window.FlashMessage.success(msg, { settings });
+        window.FlashMessage.success(msg, settings);
     else if (type == 'error')
-        window.FlashMessage.error(msg, { settings });
+        window.FlashMessage.error(msg, settings);
     else if (type == 'warning')
-        window.FlashMessage.warning(msg, { settings });
+        window.FlashMessage.warning(msg, settings);
     else if (type == 'info')
-        window.FlashMessage.info(msg, { settings });
+        window.FlashMessage.info(msg, settings);
 }
 
 /*LOADERS HELPER*/
