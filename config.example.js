@@ -33,7 +33,7 @@ var enplatedSettingsCustom = {
         gdprSetters : {
             currentVersion : "2",
             mainCookieName : "enpGdpr",
-            domain : "procmelaky.cz",
+            domain : "example.com",
             path : "/",
             expireInDays : 365,
             individualCookies : {

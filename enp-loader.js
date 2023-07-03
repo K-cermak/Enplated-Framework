@@ -19,7 +19,7 @@ startEnp();
 function startEnp() {
     bootstrapLoad();
 
-    window.onload = function() {
+    window.addEventListener("load",function() {
         varSetter();
         dataSetter();
         if (enplatedSettingsCustom.importFlash) {
@@ -34,7 +34,7 @@ function startEnp() {
         }
         loadGoogleAnalytics();
         loadCookieList();
-    };
+    });
 }
 
 /**********************************/
@@ -85,14 +85,12 @@ function flashLoad() {
 }
 
 function aosLoad() {
-    includeJs(enplatedSettingsImport.aosJs);
     loadCss(enplatedSettingsImport.aosCss);
-    //after load
-    window.onload = function() {
+    includeJs(enplatedSettingsImport.aosJs).then(() => {
         AOS.init({
             once: true,
         });
-    };
+    });
 }
 
 /*GDPR AND COOKIE LOADERS*/
