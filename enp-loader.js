@@ -131,6 +131,7 @@ function gdprLoad() {
         greyBackground.style.width = "100%";
         greyBackground.style.height = "100%";
         greyBackground.style.backgroundColor = "rgba(0,0,0,0.5)";
+        greyBackground.style.zIndex = "9999";
 
         //disable scroll
         document.body.style.overflow = "hidden";
