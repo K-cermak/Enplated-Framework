@@ -368,9 +368,6 @@ function genForm(language) {
         .gdprBox .settingsOption .settingsOption h5 {
             width: 80%;
         }
-        .gdprBox .settingsOption h5.warning {
-            color: #ff0000;
-        }
 
         /*LANGUAGE SETTINGS*/
         .gdprBox .languageSettings {
