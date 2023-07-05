@@ -24,13 +24,13 @@ var enplatedSettingsCustom = {
         disableOnDomains : ["localhost", "127.0.0.1"],
         disableOnPath : ["gdpr.html"],
         defaultLanguage : "en",
+        reloadAfterComplete : false,
         googleAnalytics : {
             enable : true,
             trackingId : "G-1234567890",
             anonymizeIp : true,
             cookieName : "enpGdprGoogleAnalytics",
         },
-        reloadAfterComplete : false,
         gdprSetters : {
             currentVersion : "1",
             mainCookieName : "enpGdpr",
