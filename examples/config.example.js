@@ -45,6 +45,13 @@ var enplatedSettingsCustom = {
                     onDecline: true,
                     cookieName : "enpGdprGoogleFonts",
                 },
+                recaptcha : {
+                    default: true,
+                    canBeChanged : true,
+                    onAccept : true,
+                    onDecline : true,
+                    cookieName : "enpGdprRecaptcha",
+                },
                 googleAnalytics : {
                     default : false,
                     canBeChanged : true,
@@ -52,13 +59,6 @@ var enplatedSettingsCustom = {
                     onDecline: false,
                     cookieName : "enpGdprGoogleAnalytics",
                 },
-                recaptcha : {
-                    default: true,
-                    canBeChanged : true,
-                    onAccept : true,
-                    onDecline : false,
-                    cookieName : "enpGdprRecaptcha",
-                }
             }
         },
         allowedLang : {
@@ -91,15 +91,15 @@ var enplatedSettingsCustom = {
                             type : "Critical functional",
                             description : "Font styles that are used on the services. This setting cannot be changed."
                         },
-                        googleAnalytics : {
-                            name : "Google Analytics",
-                            type : "Analytics",
-                            description : "Google Analytics is used to generate various statistics about user behaviour, etc."
-                        },
                         recaptcha : {
                             name : "Google reCaptcha",
                             type : "Functional",
                             description : "Google reCAPTCHA is used to protect services against various bots and spambots."
+                        },
+                        googleAnalytics : {
+                            name : "Google Analytics",
+                            type : "Analytics",
+                            description : "Google Analytics is used to generate various statistics about user behaviour, etc."
                         },
                     }
                 }
@@ -126,15 +126,15 @@ var enplatedSettingsCustom = {
                             type : "Krytický funkční",
                             description : "Styly písma, které jsou použity ve službách. Toto nastavení nemůže být změněno."
                         },
-                        googleAnalytics : {
-                            name : "Google Analytics",
-                            type : "Analytické",
-                            description : "Google Analytics je používáno pro generování různých informacích o chování uživatele apod."
-                        },
                         recaptcha : {
                             name : "Google reCaptcha",
                             type : "Funkční",
                             description : "Google reCAPTCHA je používána na ochranu před různými spamboty a jinými roboty."
+                        },
+                        googleAnalytics : {
+                            name : "Google Analytics",
+                            type : "Analytické",
+                            description : "Google Analytics je používáno pro generování různých informacích o chování uživatele apod."
                         },
                     }
                 }
@@ -161,15 +161,15 @@ var enplatedSettingsCustom = {
                             type : "Funcional esencial",
                             description : "Estilos de fuente utilizados en servicios. Esta configuración no puede ser modificada."
                         },
-                        googleAnalytics : {
-                            name : "Google Analytics",
-                            type : "Analítico",
-                            description : "Google Analytics se utiliza para generar información sobre el comportamiento del usuario, entre otras cosas."
-                        },
                         recaptcha : {
                             name : "Google reCaptcha",
                             type : "Funcional",
                             description : "Google reCAPTCHA se utiliza para protegerse contra varios spambots y otros robots."
+                        },
+                        googleAnalytics : {
+                            name : "Google Analytics",
+                            type : "Analítico",
+                            description : "Google Analytics se utiliza para generar información sobre el comportamiento del usuario, entre otras cosas."
                         },
                     }
                 }
