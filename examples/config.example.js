@@ -119,7 +119,13 @@ var enplatedSettingsCustom = {
                     mainScreen : {
                         info : "Tato stránka může používat cookies. Může také sbírat některé osobní informace. Bližší informace můžete nalézt na <a href='example.com/gdpr' target='_blank'>example.com/gdpr</a>."
                     },
-                    valueTitle : "Hodnota",
+                    gdprTitles : {
+                        cookieListTitle : "Seznam cookies",
+                        cookieValue : "Hodnota",
+                        consentVersion : "Verze souhlasu",
+                        acceptedOn : "Přijato",
+                        resetConset : "Resetovat souhlas",
+                    },
                     cookies : {
                         googleFonts : {
                             name : "Google Fonts",
@@ -154,7 +160,13 @@ var enplatedSettingsCustom = {
                     mainScreen : {
                         info : "Esta página puede utilizar cookies. También puede recopilar cierta información personal. Puede encontrar más información en <a href='example.com/gdpr' target='_blank'>example.com/gdpr</a>."
                     },
-                    valueTitle : "Valor",
+                    gdprTitles : {
+                        cookieListTitle : "Lista de cookies",
+                        cookieValue : "Valor",
+                        consentVersion : "Versión de consentimiento",
+                        acceptedOn : "Aceptado en",
+                        resetConset : "Restablecer consentimiento",
+                    },
                     cookies : {
                         googleFonts : {
                             name : "Google Fonts",
