@@ -1,7 +1,8 @@
-Enplated Framework is available under the MIT license
+## Enplated Framework is available under the MIT license
 
 You can use, distribute, modify it for free. However, the author assumes no responsibility or warranty of any kind.
 
+<br>
 
 Full text of the licence:
 
@@ -12,10 +13,13 @@ The above copyright notice and this permission notice shall be included inall co
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS ORIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THEAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHERLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS INTHE SOFTWARE.
 
 
+<br>
 
-Sources used:
-Bootstrap 5.3 by The Bootstrap Authors (https://getbootstrap.com)
-AOS by Michalsnik (https://github.com/michalsnik/aos)
-FlashJS by betaWeb (https://github.com/betaWeb/flashjs) - modified
-SpinKit by tobiasahlin (https://github.com/tobiasahlin/SpinKit)
-CSS Loaders & Spinners by vineethtrv (https://github.com/vineethtrv/css-loader)
+### Sources used:
+- Bootstrap (https://getbootstrap.com)
+- Bootstrap Icons (https://icons.getbootstrap.com)
+- Bootstrap DarkMode (https://vinorodrigues.github.io/bootstrap-dark-5/)
+- Flash.js (https://betaweb.github.io/flashjs)
+- AOS (https://michalsnik.github.io/aos)
+- SpinKit (https://tobiasahlin.com/spinkit)
+- CSS Loaders (https://cssloaders.github.io)
