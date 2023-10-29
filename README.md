@@ -19,13 +19,13 @@
 
 <br/>
 
-### 🌍 Enplated Framework website:
+### 🌍 Enplated Framework website
 - https://enplated.karlosoft.com/framework/
 
-### 😊 Implementation of Enplated:
+### 😊 Implementation of Enplated
 - https://enplated.karlosoft.com/framework/implementation
 
-### 📕 Docs:
+### 📕 Docs
 - https://enplated.karlosoft.com/framework/docs
 
 ### 🔖 License
@@ -43,13 +43,13 @@
 
 <br/>
 
-### Enplated Framework is part of Enplated project:
+### Enplated Framework is part of Enplated project
 - https://enplated.karlosoft.com
 
-### Older versions of Enplated Framework:
-- For using older versions of Enplated Framework (non recommended) go to branches.
+### Older versions of Enplated Framework
+- For older versions of Enplated Framework (non recommended) go to branches.
 
-### Sources used:
+### Sources used
 - Bootstrap (https://getbootstrap.com)
 - Bootstrap Icons (https://icons.getbootstrap.com)
 - Bootstrap DarkMode (https://vinorodrigues.github.io/bootstrap-dark-5/)
