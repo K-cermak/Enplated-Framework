@@ -8,7 +8,6 @@
 </p>
 
 <br/>
-<br/>
 
 ### 👍 Why to use Enplated Framework?
 - Simply load <b>Bootstrap</b> including <b>Bootstrap icons</b>.
@@ -37,7 +36,6 @@
 
 ### CDN Links
 - https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v3/enp-loader.min.js
-
 
 ---
 
