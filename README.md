@@ -1,6 +1,6 @@
 # ❗️❗️ This version of the Enplated Framework is no longer maintained.
 
- ### 👉 [Please go to the main branch for the latest version.](https://github.com/K-cermak/Enplated)
+g ### 👉 [Please go to the main branch for the latest version.](https://github.com/K-cermak/Enplated-Framework)
 
 <br><br>
 
