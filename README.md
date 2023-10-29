@@ -35,12 +35,9 @@
 
 ---
 
-<br/>
-
 ### CDN Links
 - https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v3/enp-loader.min.js
 
-<br/>
 
 ---
 
