@@ -1,3 +1,10 @@
+/*
+ENPLATED FRAMEWORK v3.0 by Karel Cermak (info@karlosoft.com)
+WEBSITE: https://enplated.karlosoft.com/framework/
+DOCUMENTATION: https://enplated.karlosoft.com/framework/docs
+LICENSE: https://enplated.karlosoft.com/framework/license
+*/
+
 var enplatedSettingsImport = {
     bootstrapImportCss : "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css",
     bootstrapDarkCss : "https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v3/enp-data/darkmode.min.css",
