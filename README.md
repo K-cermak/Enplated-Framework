@@ -1,6 +1,11 @@
+# ⚠ This version of the Enplated Framework is no longer maintained ⚠
+## [Please go to the main branch for the latest version.](https://github.com/K-cermak/Enplated)
+
+<br><br>
+
 <p align="center">
-    <a href="https://enplated-framework.k-cermak.com">
-        <img src="https://mirror.k-cermak.com/data/logo-v3/logo-enplatedframework-bg.svg" width="700" height="150" alt="Enplated Framework logo">
+    <a href="https://enplated.karlosoft.com/framework/2.0">
+        <img src="https://cdn.karlosoft.com/cdn-data/ks/img/enplated/github/enp-framework.svg" width="700" height="150" alt="Enplated Framework logo">
     </a>
     <br>
         <br>
@@ -19,34 +24,30 @@
 - Completely free
 
 <br/>
-<br/>
 
 ### Enplated Framework website:
-https://enplated-framework.k-cermak.com
+https://enplated.karlosoft.com/framework/2.0
 
 ### How to implement Enplated?
-https://enplated-framework.k-cermak.com/en/implementation
+https://enplated.karlosoft.com/framework/2.0/implementation
 
 ### Where can I read documentation?
-https://enplated-framework.k-cermak.com/en/documentation
+https://enplated.karlosoft.com/framework/2.0/docs
 
 ### License
-Enplated Framework is available under MIT license. More here: https://enplated-framework.k-cermak.com/en/license
+Enplated Framework is available under MIT license. More here: https://enplated.karlosoft.com/framework/2.0/license
 
-<br/>
 <br/>
 
 ### Older versions of Enplated Framework:
 For using older versions of Enplated Framework (non recommended) go to branches.
 
 <br/>
-<br/>
 
 ### Enplated Framework is part of Enplated project:
-https://enplated.k-cermak.com
+https://enplated.karlosoft.com
 
 
-<br/>
 <br/>
 
 ### Sources used:

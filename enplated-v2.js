@@ -1,8 +1,8 @@
 /*
-ENPLATED FRAMEWORK v2.0 by Karel Cermak (info@k-cermak.com)
-WEBSITE: https://enplated-framework.k-cermak.com/
-DOCUMENTATION: https://enplated-framework.k-cermak.com/en/documentation
-LICENSE: https://enplated-framework.k-cermak.com/en/license
+ENPLATED FRAMEWORK v2.0 by Karel Cermak (info@karlosoft.com)
+WEBSITE: https://enplated.karlosoft.com/framework/2.0/
+DOCUMENTATION: https://enplated.karlosoft.com/framework/2.0/docs
+LICENSE: https://enplated.karlosoft.com/framework/2.0/license
 */
 
 document.querySelector("head").innerHTML += "<link rel='stylesheet' type='text/css' media='screen' href='https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v2/enplated-v2.min.css'>";
@@ -34,14 +34,14 @@ function loadVariables() {
 function loadCopyright() {
     if (developerVersion == true) {
         try {
-            document.querySelector("#"+copyrightInfoId).innerHTML += "Created with <a href='https://enplated-framework.k-cermak.com' target='_blank'>Enplated Framework v2.0</a> (privacy policy <a href='https://gdpr.k-cermak.com' target='_blank'>here</a>). May use <a href='https://policies.google.com/privacy?hl=en-US' target='_blank'>Google Services</a>. ";
+            document.querySelector("#"+copyrightInfoId).innerHTML += "Created with <a href='https://enplated.karlosoft.com/framework/2.0/' target='_blank'>Enplated Framework v2.0</a>.";
         } catch (err) {}
 
         document.querySelector("main").innerHTML = "<p style='color:red'>Developer mode activated</p>" + document.querySelector("main").innerHTML;
         printMessage("check","Developer version enabled")
     } else {
         try {
-            document.querySelector("#"+copyrightInfoId).innerHTML += "Created with <a href='https://enplated-framework.k-cermak.com' target='_blank'>Enplated Framework v2.0</a> (privacy policy <a href='https://gdpr.k-cermak.com' target='_blank'>here</a>). May use <a href='https://policies.google.com/privacy?hl=en-US' target='_blank'>Google Services</a>. ";
+            document.querySelector("#"+copyrightInfoId).innerHTML += "Created with <a href='https://enplated.karlosoft.com/framework/2.0/' target='_blank'>Enplated Framework v2.0</a>.";
         } catch (err) {
             document.querySelector("main").innerHTML = "<h1 style='color:red'>Enplated Framework copyright doesn't exist (read browser console)</h1>" + document.querySelector("main").innerHTML;
             printMessage("error","Enplated Framework core cannot find copyright bar", true)
