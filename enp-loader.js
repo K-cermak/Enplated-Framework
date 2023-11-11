@@ -66,7 +66,6 @@ function varSetter() {
             enpSet.innerHTML = enpVarValue;
         }
     }
-    
 }
 
 function dataSetter() {
@@ -494,7 +493,7 @@ function genForm(language) {
         <h2>`+enplatedSettingsCustom.gdprSettings.allowedLang[language].texts.title+`</h2>`;
 
     if (Object.keys(enplatedSettingsCustom.gdprSettings.allowedLang).length> 1) {
-        data += `<h4 class="changeLanguage"><img src="`+enplatedSettingsCustom.gdprSettings.allowedLang[language].flag+`" height="40px"></h4>`;
+        data += `<h4 class="changeLanguage"><img src="`+enplatedSettingsCustom.gdprSettings.allowedLang[language].flag+`" alt="Change Language Button" height="40px"></h4>`;
     }
     
     data += `</div>
