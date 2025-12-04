@@ -34,20 +34,20 @@
 
 ---
 
-### CDN Links
+### CDN Links:
 - https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v3/enp-loader.min.js
 
 ---
 
 <br/>
 
-### Enplated Framework is part of Enplated project
+### Enplated Framework is part of Enplated project:
 - https://enplated.karlosoft.com
 
-### Older versions of Enplated Framework
+### Older versions of Enplated Framework:
 - For older versions of Enplated Framework (non recommended) go to branches.
 
-### Sources used
+### Sources used:
 - Bootstrap (https://getbootstrap.com)
 - Bootstrap Icons (https://icons.getbootstrap.com)
 - Bootstrap DarkMode (https://vinorodrigues.github.io/bootstrap-dark-5/)
