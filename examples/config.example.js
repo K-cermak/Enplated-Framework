@@ -4,7 +4,7 @@ var enplatedSettingsCustom = {
     importAOS : true,
     smartVars : {
         "enp-title" : "Enplated",
-        "enp-description" : "Enplated is a free and open source template engine. It is designed to be easy to use and fast.",
+        "enp-description" : "Enplated is a free and open-source template engine. It is designed to be easy to use and fast.",
     },
     dataSetter : {
         basicAnimation : {
@@ -68,14 +68,14 @@ var enplatedSettingsCustom = {
                 texts : {
                     title : "GDPR and cookies",
                     buttons : {
-                        acceptButton : "Accept all Cookies",
+                        acceptButton : "Accept all cookies",
                         customizeButton : "Customize your settings",
                         declineButton : "Continue with only necessary cookies",
                         goBack : "Go back",
                         continueWithSelected : "Continue with selected settings"
                     },
                     mainScreen : {
-                        info : "This website may use cookies. It may also collect certain personal information. All information can be found on this page <a href='example.com/gdpr' target='_blank'>example.com/gdpr</a>."
+                        info : "This website may use cookies. It may also collect certain personal information. All information can be found at <a href='example.com/gdpr' target='_blank'>example.com/gdpr</a>."
                     },
                     gdprTitles : {
                         cookieListTitle : "Cookie list",
@@ -88,18 +88,18 @@ var enplatedSettingsCustom = {
                     cookies : {
                         googleFonts : {
                             name : "Google Fonts",
-                            type : "Critical functional",
-                            description : "Font styles that are used on the services. This setting cannot be changed."
+                            type : "Essential functional",
+                            description : "Font styles used by the services. This setting cannot be changed."
                         },
                         recaptcha : {
-                            name : "Google reCaptcha",
+                            name : "Google reCAPTCHA",
                             type : "Functional",
-                            description : "Google reCAPTCHA is used to protect services against various bots and spambots."
+                            description : "Google reCAPTCHA is used to protect the services against various bots and spambots."
                         },
                         googleAnalytics : {
                             name : "Google Analytics",
                             type : "Analytics",
-                            description : "Google Analytics is used to generate various statistics about user behaviour, etc."
+                            description : "Google Analytics is used to generate various statistics about user behavior and more."
                         },
                     }
                 }
@@ -133,7 +133,7 @@ var enplatedSettingsCustom = {
                             description : "Styly písma, které jsou použity ve službách. Toto nastavení nemůže být změněno."
                         },
                         recaptcha : {
-                            name : "Google reCaptcha",
+                            name : "Google reCAPTCHA",
                             type : "Funkční",
                             description : "Google reCAPTCHA je používána na ochranu před různými spamboty a jinými roboty."
                         },
@@ -174,7 +174,7 @@ var enplatedSettingsCustom = {
                             description : "Estilos de fuente utilizados en servicios. Esta configuración no puede ser modificada."
                         },
                         recaptcha : {
-                            name : "Google reCaptcha",
+                            name : "Google reCAPTCHA",
                             type : "Funcional",
                             description : "Google reCAPTCHA se utiliza para protegerse contra varios spambots y otros robots."
                         },

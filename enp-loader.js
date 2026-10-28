@@ -118,19 +118,19 @@ function gdprLoad() {
     let hostname = window.location.hostname;
     let pathname = window.location.pathname;
 
-    //if in gdprSettings.disableOnDomains or gdprSettings.disableOnPath
+    //if not in gdprSettings.disableOnDomains or gdprSettings.disableOnPath
     if (!enplatedSettingsCustom.gdprSettings.disableOnDomains.includes(hostname) && !enplatedSettingsCustom.gdprSettings.disableOnPath.includes(pathname)) {
         let language = navigator.language || navigator.userLanguage;
         if (typeof enpPageLang !== "undefined") {
             language = enpPageLang;
         }
 
-        //if not in gdprSettings.allowedLanguages
+        //if not in gdprSettings.allowedLang
         if (!enplatedSettingsCustom.gdprSettings.allowedLang[language]) {
             language = enplatedSettingsCustom.gdprSettings.defaultLanguage;
         }
 
-        //generate grey background over whole page
+        //generate grey background over the whole page
         let greyBackground = document.createElement("div");
         greyBackground.classList.add("enp-gdpr-background");
         greyBackground.style.position = "fixed";
@@ -597,7 +597,7 @@ function cookieSetter(type) {
     setCookie(mainCookieName, currentVersion, cookiePath, cookieDomain, cookieExpire);
 
     for (let cookie in enplatedSettingsCustom.gdprSettings.gdprSetters.individualCookies) {
-        //get cookie value on accept and cookieName
+        //get cookieName and cookie value for the given type
         let cookieName = enplatedSettingsCustom.gdprSettings.gdprSetters.individualCookies[cookie].cookieName;
         let cookieValue = "";
         if (type == "custom") {
@@ -634,9 +634,9 @@ function getCookieValue(cookieName) {
 }
 
 function loadGoogleAnalytics() {
-    //check if allowed and if is enabled
+    //check if allowed and enabled
     if (enplatedSettingsCustom.gdprSettings.googleAnalytics.enable == true && getCookieValue(enplatedSettingsCustom.gdprSettings.googleAnalytics.cookieName) == "true") {
-        //load google analytics
+        //load Google Analytics
         let anonymizeIp = enplatedSettingsCustom.gdprSettings.googleAnalytics.anonymizeIp;
         let trackingId = enplatedSettingsCustom.gdprSettings.googleAnalytics.trackingId;
 
@@ -778,7 +778,7 @@ function startAnimRender() {
                 loaderHtml = loadersData.spinkit[loaderName].html;
                 loaderCss = loadersData.spinkit[loaderName].css;
                 
-                //rename selector with random id
+                //replace selector with random id
                 loaderHtml = loaderHtml.replaceAll("selector", randomId);
                 loaderCss = loaderCss.replaceAll("selector", randomId);
 
@@ -805,7 +805,7 @@ function startAnimRender() {
                 }
             }
 
-            //rename selector with random id
+            //replace selector with random id
             loaderHtml = loaderHtml.replaceAll("selector", randomId);
             loaderCss = loaderCss.replaceAll("selector", randomId);
 
@@ -864,7 +864,7 @@ function genModal(object) {
                 location.reload();
             } else if (button.function == "submit") {
 
-                //if function exists, execute it, if not, submit form
+                //if a function exists, execute it; if not, submit the form
                 if (button.dataset) {
                     //replace word "selector" with modalId
                     let func = button.dataset.toString().replaceAll("selector", "#" + modalId);
@@ -872,7 +872,7 @@ function genModal(object) {
                     //convert string to function
                     func = new Function("return " + func)();
 
-                    //if function returns false, stop submit
+                    //if the function returns false, stop the submission
                     let returnData = func();
                     if (returnData == false) {
                         return;

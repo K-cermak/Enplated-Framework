@@ -9,43 +9,43 @@
 
 <br/>
 
-### 👍 Why to use Enplated Framework?
-- Simply load <b>Bootstrap</b> including <b>Bootstrap icons</b>.
-- For animations, the built-in <b>AOS library</b> can help you. <b>Flash messages</b> is perfect for notifications.
-- Ease the process of creating <b>modals with intuitive commands</b>.
+### 👍 Why use Enplated Framework?
+- Simply load <b>Bootstrap</b>, including <b>Bootstrap Icons</b>.
+- For animations, the built-in <b>AOS library</b> can help you. <b>Flash messages</b> are perfect for notifications.
+- Simplify the process of creating <b>modals with intuitive commands</b>.
 - The Enplated Framework also features the ability to insert your own <b>HTML variables</b> and loading icons.
-- Fully supports creating <b>custom rules for GDPR</b> and creating <b>consent confirmation modal</b>.
+- Fully supports creating <b>custom rules for GDPR</b> and a <b>consent confirmation modal</b>.
 
 <br/>
 
 ### 🌍 Enplated Framework website
 - https://enplated.karlosoft.com/framework/
 
-### 😊 How to implement Enplated Framework?
+### 😊 How to implement Enplated Framework
 - https://enplated.karlosoft.com/framework/implementation
 
 ### 📕 Docs
 - https://enplated.karlosoft.com/framework/docs
 
 ### 🔖 License
-- Enplated Framework is available under MIT license. More here: https://enplated.karlosoft.com/framework/license
+- Enplated Framework is available under the MIT license. More information: https://enplated.karlosoft.com/framework/license
 
 <br/>
 
 ---
 
-### CDN Links:
+### CDN links:
 - https://cdn.jsdelivr.net/gh/K-cermak/Enplated-Framework@enp-v3/enp-loader.min.js
 
 ---
 
 <br/>
 
-### Enplated Framework is part of Enplated project:
+### Enplated Framework is part of the Enplated project:
 - https://enplated.karlosoft.com
 
 ### Older versions of Enplated Framework:
-- For older versions of Enplated Framework (non recommended) go to branches.
+- For older versions of Enplated Framework (not recommended), see the other branches.
 
 ### Sources used:
 - Bootstrap (https://getbootstrap.com)

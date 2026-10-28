@@ -32,14 +32,14 @@ var enplatedSettingsCustom = {
                 texts : {
                     title : "GDPR and cookies",
                     buttons : {
-                        acceptButton : "Accept all Cookies",
+                        acceptButton : "Accept all cookies",
                         customizeButton : "Customize your settings",
                         declineButton : "Continue with only necessary cookies",
                         goBack : "Go back",
                         continueWithSelected : "Continue with selected settings"
                     },
                     mainScreen : {
-                        info : "This website may use cookies. It may also collect certain personal information. All information can be found on this page <a href='example.com/gdpr' target='_blank'>example.com/gdpr</a>."
+                        info : "This website may use cookies. It may also collect certain personal information. All information can be found at <a href='example.com/gdpr' target='_blank'>example.com/gdpr</a>."
                     },
                     gdprTitles : {
                         cookieListTitle : "Cookie list",
