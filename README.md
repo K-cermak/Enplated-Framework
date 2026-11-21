@@ -3,7 +3,7 @@
         <picture>
             <source media="(prefers-color-scheme: dark)" srcset="https://cdn.karlosoft.com/cdn-data/ks/img/enplated/enp-framework.svg">
             <source media="(prefers-color-scheme: light)" srcset="https://cdn.karlosoft.com/cdn-data/ks/img/enplated/enp-framework-dark.svg">
-            <img alt="Enplated Framework" src="https://cdn.karlosoft.com/cdn-data/ks/img/enplated/enp-framework.svg" width="700" height="150">
+            <img alt="Enplated Framework" src="https://cdn.karlosoft.com/cdn-data/ks/img/enplated/enp-framework-dark.svg" width="700" height="150">
         </picture>
         </a>
     <br>
