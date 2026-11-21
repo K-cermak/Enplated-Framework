@@ -5,7 +5,7 @@
             <source media="(prefers-color-scheme: light)" srcset="https://cdn.karlosoft.com/cdn-data/ks/img/enplated/enp-framework-dark.svg">
             <img alt="Enplated Framework" src="https://cdn.karlosoft.com/cdn-data/ks/img/enplated/enp-framework-dark.svg" width="700">
         </picture>
-        </a>
+    </a>
     <br>
     <strong>Smart Bootstrap loader with many additional features.</strong>
 </p>
